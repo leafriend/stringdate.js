@@ -24,7 +24,7 @@ All functions in below should applied on valid format, otherwise it throws `Erro
 : *Note* that vanilla JavaScript Date object's [`getMonth()`][mdn-date-getmonth] returns integer between 0 and 11.
 
 `String.prototype.getDate()`
-: Returns date of month between 1 and 28/29/30/31.
+: Returns date of month between 1 and 31.
 
 ```javascript
 // get year
@@ -85,7 +85,7 @@ console.log(count); // 65
 License
 ----------------------------------------
 
-[MIT](http://opensource.org/licenses/MIT)
+[MIT License](http://opensource.org/licenses/MIT)
 
 [mdn-string]: http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 [mdn-date]: http://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
