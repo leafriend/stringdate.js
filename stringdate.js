@@ -1,7 +1,7 @@
 /*
  * String-Date JavaScript Library
  * @leafriend
- * http://github.com/leafriend/string.js
+ * http://github.com/leafriend/stringdate.js
  * MIT
  */
 
