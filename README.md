@@ -10,7 +10,7 @@ Usage
 
 Valid format is `"yyyy-MM-dd"` in general. `"yyyy-MM"` is allowed for `getLastDate()` and `isLeapYear()`. `"yyyy"` is allowed for `isLeapYear()` only.
 
-**Note** that the string should be valid syntactically and semantically. It means `"2015-04-31"` is not valid in `stringdate.js` while it makes a date of May 1st, 2015 in vanilla JavaScript.
+*Note* that the string should be valid syntactically and semantically. It means `"2015-04-31"` is not valid in `stringdate.js` while it makes a date of May 1st, 2015 in vanilla JavaScript.
 
 All functions in below should applied on valid format, otherwise it throws `Error`.
 
@@ -21,7 +21,7 @@ All functions in below should applied on valid format, otherwise it throws `Erro
 
 `String.prototype.getMonth()`
 : Returns month between 1 and 12.
-: **Note** that vanilla JavaScript Date object's [`getMonth()`][mdn-date-getmonth] returns integer between 0 and 11.
+: *Note* that vanilla JavaScript Date object's [`getMonth()`][mdn-date-getmonth] returns integer between 0 and 11.
 
 `String.prototype.getDate()`
 : Returns date of month between 1 and 31.
@@ -42,12 +42,6 @@ All functions in below should applied on valid format, otherwise it throws `Erro
 
 ### Dealing Last Date and Leap Year
 
-`String.prototype.getLastDate()`
-: Returns last date of the month. Date format can be either `"yyyy-MM-dd"` or `"yyyy-MM"`.
-
-`String.prototype.isLeapYear()`
-: Determine whether the year is leap year or not. Date format can be one of `"yyyy-MM-dd"`, `"yyyy-MM"`, or `"yyyy"`.
-
 ```javascript
 // get last date
 "2015-02-01".getLastDate(); // 28
@@ -64,12 +58,6 @@ All functions in below should applied on valid format, otherwise it throws `Erro
 "2016".isLeapYear(); // true
 ```
 ### Calculating days between dates
-
-`String.prototype.getDaysFrom(target)`
-: Returns days between `this` date and `target` date. It returns positive when `target` is past, or negative when `target` is future. You can use this function as subtraction operator `-`.
-
-`String.prototype.addDays(days)`
-: Returns new date after/before the date. It returns future date for positive `days`, or past date for negative `days`. You can use this function as addition operator `+`.
 
 ```javascript
 // get days between two dates
