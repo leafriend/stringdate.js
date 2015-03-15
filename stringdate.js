@@ -59,9 +59,9 @@ String.prototype.isLeapYear = function() {
     return date.getDate() == 29;
 }
 
-String.prototype.getDaysFrom = function(date) {
+String.prototype.getDaysFrom = function(target) {
     var from = this.toDate();
-    var to = date.toString().toDate();
+    var to = target.toString().toDate();
     return (from - to) / (1000 * 60 * 60 * 24);
 }
 
